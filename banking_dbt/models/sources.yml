@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: raw
+    database: BANKING
+    schema: RAW
+    tables:
+      - name: customers
+        identifier: CUSTOMERS
+      - name: accounts
+        identifier: ACCOUNTS
+      - name: transactions
+        identifier: TRANSACTIONS

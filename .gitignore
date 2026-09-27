@@ -1,0 +1,45 @@
+# Local credentials (keep the setup template)
+.env
+.env.*
+!.env.example
+
+# Python environments, bytecode, and tool caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+*.egg-info/
+.tools/
+.uv-cache/
+.uv-python/
+
+# Generated banking data and process output
+/data/generated/
+logs/
+*.log
+*.pid
+
+# dbt generated files and local user settings
+banking_dbt/target/
+banking_dbt/dbt_packages/
+banking_dbt/.user.yml
+
+# Local Airflow runtime files
+airflow/airflow.cfg
+airflow/airflow.db*
+airflow/standalone_admin_password.txt
+airflow/dbt_venvs/
+airflow/dbt_runs/
+
+# Editor and operating system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini

@@ -1,0 +1,12 @@
+snapshots:
+  - name: accounts_snapshot
+    relation: ref('stg_accounts')
+    config:
+      unique_key: account_id
+      strategy: check
+      check_cols:
+        - customer_id
+        - account_type
+        - balance
+        - currency
+      hard_deletes: invalidate
