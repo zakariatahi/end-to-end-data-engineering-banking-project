@@ -380,6 +380,4 @@ The terminal shows the Kafka consumer writing event batches to MinIO.
 - **Persistence:** `docker compose down` stops the infrastructure while retaining named volumes. Stop the host generator and consumer separately with Ctrl+C.
 - **Planned additions:** Power BI dashboards, automated data quality tests, CI/CD, and a deployment configuration for a production environment.
 
-## Acknowledgments
 
-Inspired by [Jay61616/banking-modern-datastack](https://github.com/Jay61616/banking-modern-datastack). This implementation adapts the design with Kafka KRaft, MinIO, a continuous Faker-based generator, and the ingestion and dbt schedules described above.
